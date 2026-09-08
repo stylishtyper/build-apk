@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">My AI App</string>
+    <string name="app_name">Akhirah Reminder</string>
+    <string name="title_alarms">দৈনিক ৫টি স্মরণ সেশন</string>
+    <string name="desc_alarms">ব্যস্ততার মাঝে ৫টি মুহূর্ত মৃত্যুর জন্য স্থির করুন</string>
+    <string name="btn_save">সংরক্ষণ করুন</string>
+    <string name="btn_test_reflection">রিফ্লেকশন টেস্ট করুন</string>
+    <string name="gemini_key_title">Gemini API Key (BYOK)</string>
+    <string name="gemini_key_hint">আপনার Gemini API কী এখানে পেস্ট করুন</string>
+    <string name="audio_play">তেলাওয়াত শুনুন</string>
+    <string name="audio_pause">থামান</string>
+    <string name="tasbih_title">মুহূর্তের তাসবীহ: আস্তাগফিরুল্লাহ</string>
+    <string name="donation_title">মৃত্যুর পূর্বেই সাদাকাহ করুন</string>
+    <string name="close_reflection">দুনিয়ায় ফিরে যান</string>
 </resources>
