@@ -1,4 +1,4 @@
-package com.akhirah.reminder.data.model
+package com.example.myapp.data.model
 
 data class QuranAyah(
     val arabic: String,
