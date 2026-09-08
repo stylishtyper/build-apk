@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Deep Minimalist OLED Dark Mode -->
+    <color name="bg_black">#080808</color>
+    <color name="bg_card">#121212</color>
+    <color name="text_primary">#E6E6E6</color>
+    <color name="text_secondary">#9E9E9E</color>
+    <color name="text_arabic">#F3F3F3</color>
+    <color name="accent_gold">#C5A880</color>
+    <color name="accent_muted">#424242</color>
+    <color name="divider_color">#1F1F1F</color>
+</resources>
