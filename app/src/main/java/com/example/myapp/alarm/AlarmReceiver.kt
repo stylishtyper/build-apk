@@ -1,4 +1,4 @@
-package com.akhirah.reminder.alarm
+package com.example.myapp
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -10,8 +10,6 @@ import android.media.RingtoneManager
 import android.os.Build
 import android.os.PowerManager
 import androidx.core.app.NotificationCompat
-import com.akhirah.reminder.R
-import com.akhirah.reminder.ui.ReflectionActivity
 
 class AlarmReceiver : BroadcastReceiver() {
 
