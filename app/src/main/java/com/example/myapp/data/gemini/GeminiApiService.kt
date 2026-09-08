@@ -1,4 +1,4 @@
-package com.example.myapp
+package com.example.myapp.data.gemini
 
 import android.content.Context
 import kotlinx.coroutines.Dispatchers
