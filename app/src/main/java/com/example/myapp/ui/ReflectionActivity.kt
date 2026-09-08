@@ -1,4 +1,4 @@
-package com.example.myapp
+package com.example.myapp.ui
 
 import android.content.Intent
 import android.media.AudioAttributes
@@ -11,6 +11,10 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.example.myapp.R
+import com.example.myapp.data.database.StaticReminderDatabase
+import com.example.myapp.data.gemini.GeminiApiService
+import com.example.myapp.data.model.ReminderSessionData
 import com.example.myapp.databinding.ActivityReflectionBinding
 import kotlinx.coroutines.launch
 
