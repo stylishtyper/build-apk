@@ -1,4 +1,4 @@
-package com.akhirah.reminder.ui
+package com.example.myapp
 
 import android.content.Intent
 import android.media.AudioAttributes
@@ -11,11 +11,7 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.akhirah.reminder.R
-import com.akhirah.reminder.data.database.StaticReminderDatabase
-import com.akhirah.reminder.data.gemini.GeminiApiService
-import com.akhirah.reminder.data.model.ReminderSessionData
-import com.akhirah.reminder.databinding.ActivityReflectionBinding
+import com.example.myapp.databinding.ActivityReflectionBinding
 import kotlinx.coroutines.launch
 
 class ReflectionActivity : AppCompatActivity() {
@@ -60,12 +56,10 @@ class ReflectionActivity : AppCompatActivity() {
     }
 
     private fun renderSession(session: ReminderSessionData) {
-        // Ayah
         binding.tvAyahArabic.text = session.ayah.arabic
         binding.tvAyahBengali.text = session.ayah.bengali
         binding.tvAyahRef.text = session.ayah.reference
 
-        // Hadith
         binding.tvHadithArabic.text = session.hadith.arabic
         binding.tvHadithBengali.text = session.hadith.bengali
         binding.tvHadithRef.text = session.hadith.reference
@@ -114,9 +108,7 @@ class ReflectionActivity : AppCompatActivity() {
 
     private fun stopAudio() {
         mediaPlayer?.let {
-            if (it.isPlaying) {
-                it.stop()
-            }
+            if (it.isPlaying) it.stop()
             it.release()
         }
         mediaPlayer = null
