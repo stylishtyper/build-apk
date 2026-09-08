@@ -23,7 +23,6 @@ class AlarmReceiver : BroadcastReceiver() {
 
         val sessionId = intent.getIntExtra("SESSION_ID", 1)
 
-        // Wake screen
         val powerManager = context.getSystemService(Context.POWER_SERVICE) as PowerManager
         val wakeLock = powerManager.newWakeLock(
             PowerManager.FULL_WAKE_LOCK or
@@ -33,7 +32,6 @@ class AlarmReceiver : BroadcastReceiver() {
         )
         wakeLock.acquire(10_000)
 
-        // Full Screen Reflection Intent
         val fullScreenIntent = Intent(context, ReflectionActivity::class.java).apply {
             putExtra("SESSION_ID", sessionId)
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or
@@ -67,7 +65,7 @@ class AlarmReceiver : BroadcastReceiver() {
             ?: RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
 
         val notification = NotificationCompat.Builder(context, channelId)
-            .setSmallIcon(R.mipmap.ic_launcher)
+            .setSmallIcon(R.drawable.ic_launcher)
             .setContentTitle("আখিরাতের ডাক: এক মুহূর্ত থামুন")
             .setContentText("মৃত্যু ও অনন্ত জীবনের স্মরণ আপনাকে অপেক্ষা করছে।")
             .setPriority(NotificationCompat.PRIORITY_MAX)
@@ -79,7 +77,6 @@ class AlarmReceiver : BroadcastReceiver() {
 
         notificationManager.notify(sessionId, notification)
 
-        // Re-schedule for next day
         AlarmScheduler.scheduleAllAlarms(context)
     }
 }
