@@ -20,7 +20,7 @@
         android:theme="@style/Theme.AkhirahReminder">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +29,7 @@
         </activity>
 
         <activity
-            android:name=".ReflectionActivity"
+            android:name=".ui.ReflectionActivity"
             android:exported="false"
             android:showOnLockScreen="true"
             android:showWhenLocked="true"
@@ -38,7 +38,7 @@
             android:theme="@style/Theme.AkhirahReminder.FullScreen" />
 
         <receiver
-            android:name=".AlarmReceiver"
+            android:name=".alarm.AlarmReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
