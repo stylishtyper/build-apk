@@ -1,4 +1,4 @@
-package com.akhirah.reminder.alarm
+package com.example.myapp
 
 import android.app.AlarmManager
 import android.app.PendingIntent
@@ -9,7 +9,7 @@ import java.util.Calendar
 
 object AlarmScheduler {
 
-    const val ACTION_ALARM = "com.akhirah.reminder.ACTION_ALARM_TRIGGER"
+    const val ACTION_ALARM = "com.example.myapp.ACTION_ALARM_TRIGGER"
     private const val PREFS = "AlarmPrefs"
 
     data class AlarmConfig(val hour: Int, val minute: Int)
