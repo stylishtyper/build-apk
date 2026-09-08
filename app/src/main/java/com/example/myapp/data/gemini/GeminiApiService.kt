@@ -1,4 +1,4 @@
-package com.akhirah.reminder.data.gemini
+package com.example.myapp
 
 import android.content.Context
 import kotlinx.coroutines.Dispatchers
