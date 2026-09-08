@@ -1,4 +1,4 @@
-package com.example.myapp
+package com.example.myapp.alarm
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -10,6 +10,8 @@ import android.media.RingtoneManager
 import android.os.Build
 import android.os.PowerManager
 import androidx.core.app.NotificationCompat
+import com.example.myapp.R
+import com.example.myapp.ui.ReflectionActivity
 
 class AlarmReceiver : BroadcastReceiver() {
 
