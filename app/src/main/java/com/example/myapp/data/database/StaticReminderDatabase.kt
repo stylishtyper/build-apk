@@ -1,8 +1,8 @@
-package com.akhirah.reminder.data.database
+package com.example.myapp.data.database
 
-import com.akhirah.reminder.data.model.HadithContent
-import com.akhirah.reminder.data.model.QuranAyah
-import com.akhirah.reminder.data.model.ReminderSessionData
+import com.example.myapp.data.model.HadithContent
+import com.example.myapp.data.model.QuranAyah
+import com.example.myapp.data.model.ReminderSessionData
 
 object StaticReminderDatabase {
 
