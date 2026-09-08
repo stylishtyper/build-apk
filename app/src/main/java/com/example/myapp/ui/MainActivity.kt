@@ -1,4 +1,4 @@
-package com.akhirah.reminder.ui
+package com.example.myapp.ui
 
 import android.app.TimePickerDialog
 import android.content.Intent
@@ -7,10 +7,10 @@ import android.view.LayoutInflater
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.akhirah.reminder.R
-import com.akhirah.reminder.alarm.AlarmScheduler
-import com.akhirah.reminder.data.gemini.GeminiApiService
-import com.akhirah.reminder.databinding.ActivityMainBinding
+import com.example.myapp.R
+import com.example.myapp.alarm.AlarmScheduler
+import com.example.myapp.data.gemini.GeminiApiService
+import com.example.myapp.databinding.ActivityMainBinding
 import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnSave.setOnClickListener {
             saveApiKey()
             AlarmScheduler.scheduleAllAlarms(this)
-            Toast.makeText(this, "সকল রিমাইন্ডার সফলভাবে শিডিউল করা হয়েছে।", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "সকল রিমাইন্ডার শিডিউল করা হয়েছে।", Toast.LENGTH_SHORT).show()
         }
 
         binding.btnTestReflection.setOnClickListener {
