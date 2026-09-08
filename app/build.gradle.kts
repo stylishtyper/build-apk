@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.akhirah.reminder"
+    namespace = "com.example.myapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.akhirah.reminder"
+        applicationId = "com.example.myapp"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -47,7 +47,6 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.1")
 
-    // Network for Gemini API
+    // OkHttp for Gemini REST API
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
-    implementation("org.json:json:20231013")
 }
